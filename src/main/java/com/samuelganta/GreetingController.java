@@ -20,7 +20,9 @@ public class GreetingController {
 	//The mapping annotations allows you to map 
 	//HTTP requests to specific controller methods.
 	
-	@GetMapping("/greeting") //it is specialized version of @RequestMapping annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET). 
+	
+	
+	@GetMapping("/") //it is specialized version of @RequestMapping annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET). 
 	public String greetingForm(Model model) {
 		model.addAttribute("greeting", new Greeting());
 		return "greeting";
